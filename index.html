@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Learn to Coexist</title>
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
+  
+	<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+ 	<style>
+    article, aside, figure, footer, header, hgroup, 
+    menu, nav, section { display: block; }
+  	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+	
+	google.charts.load('current', {
+	'packages':['geochart'],
+	// Note: you will need to get a mapsApiKey for your project.
+	// See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+	'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+	  });
+	google.charts.setOnLoadCallback(drawRegionsMap);
+
+	function drawRegionsMap() {
+	var data = google.visualization.arrayToDataTable([
+	  ['Country'],
+	  ['Ireland'],
+	  ['United States'],
+	  ['China'],
+	  ['Puerto Rico'],
+	  ['Nigeria']
+	  
+	]);
+
+	var options = {};
+
+	var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+	chart.draw(data, options);
+	  }
+	</script>
+	
+	</head>
+	<style> p.padding{
+	padding:0.5cm 2cm;
+	}
+	</style>
+	</head>
+	
+
+
+	<body style="background-color:#eaeafb; font-family:Lucida Console; font-size:23px">
+	
+	<ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+
+	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#Afterlife">Afterlife
+	<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<!--<li><a data-toggle="tab" href="#Cherokeeafterlife">Cherokee</a></li> -->
+	<li><a data-toggle="tab" href="#Chinaafterlife">China</a></li>
+	<li><a data-toggle="tab" href="#Irelandafterlife">Ireland</a></li>
+	<li><a data-toggle="tab" href="#Nigeriaafterlife">Nigeria</a></li>
+	<li><a data-toggle="tab" href="#PuertoRicoafterlife">Puerto Rico</a></li>	
+	</ul>
+	</li>
+
+	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#creation">Creation
+	<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<!--<li><a data-toggle="tab" href="#Cherokeecreation">Cherokee</a></li> -->
+	<li><a data-toggle="tab" href="#Chinacreation">China</a></li>
+	<li><a data-toggle="tab" href="#Irelandcreation">Ireland</a></li>
+	<li><a data-toggle="tab" href="#Nigeriacreation">Nigeria</a></li>
+	<li><a data-toggle="tab" href="#PuertoRicocreation">Puerto Rico</a></li>
+	</ul>
+	</li>
+	
+	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#Evil">Evil
+	<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<!-- <li><a data-toggle="tab" href="#Cherokeeevil">Cherokee</a></li> -->
+	<li><a data-toggle="tab" href="#Chinaevil">China</a></li>
+	<li><a data-toggle="tab" href="#Irelandevil">Ireland</a></li>
+	<li><a data-toggle="tab" href="#Nigeriaevil">Nigeria</a></li>
+	<li><a data-toggle="tab" href="#PuertoRicoevil">Puerto Rico</a></li>	
+	</ul>
+	
+	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#Folklore">Folklore
+	<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<!-- <li><a data-toggle="tab" href="#Cherokeefolklore">Cherokee</a></li>-->
+	<li><a data-toggle="tab" href="#Chinafolklore">China</a></li>
+	<li><a data-toggle="tab" href="#Irelandfolklore">Ireland</a></li>
+	<li><a data-toggle="tab" href="#Nigeriafolklore">Nigeria</a></li>
+	<li><a data-toggle="tab" href="#PuertoRicofolklore">Puerto Rico</a></li>
+	</ul>
+	</li>
+
+	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#Love">Love
+	<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<!--<li><a data-toggle="tab" href="#Cherokeelove">Cherokee</a></li>-->
+	<li><a data-toggle="tab" href="#Chinalove">China</a></li>
+	<li><a data-toggle="tab" href="#Irelandlove">Ireland</a></li>
+	<li><a data-toggle="tab" href="#Nigerialove">Nigeria</a></li>
+	<li><a data-toggle="tab" href="#PuertoRicolove">Puerto Rico</a></li>
+	</ul>
+	</li>
+
+	<li><a data-toggle="tab" href="#Add">More Stories</a></li>
+
+	<li><a data-toggle="tab" href="#Iam">I am...</a></li>
+
+	<li><a data-toggle="tab" href="#AboutUs">About Us</a></li>
+	</ul>
+<!-- you can ignore everything above this, Put actual content of the website under the correct tab in the paragraph-->
+	<section id="showcase">
+	<div class="container">
+	</div>
+	</section>
+	<section id="newsletter">
+	<div class="container">
+	<center><h3> <font color="lightcoral ">The Beauty of the World Lies in the Diversity of its People</font><h3></center>
+	<form>
+	
+	</form>
+	</div>
+	<!--></section>
+	<div class="tab-content">
+	<div id="home" class="tab-pane fade in active">
+	<style><-->
+
+#banner {
+  position: center top;
+    left: 4000px;
+  right: 4000px;
+  width: 100%;
+  height: 4000px;
+  z-index: -1;
+  
+}
+/*Showcase**/
+#showcase{
+	min-height:400px;
+	
+background:url('./Pictures/bannerr.jpg') no-repeat 35px;
+	text-align:center;
+	color:#ffffff;
+}
+
+
+
+#showcase h1{
+	margin-top:100px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+
+#showcase p{
+	font-size:20px;
+}
+/*Newsletter**/
+#newsletter{
+	padding:15px;
+	color:#ffffff;
+	background:#35424a
+}
+
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+footer{
+	padding:60px;
+	margin-top:100px;
+	color:e8491d;
+	background-color:e8491d;
+	text-align: center;
+}
+.container{
+	width:80%
+	margin:auto;
+	overflow:hidden;
+	
+}
+ul{
+	margin:50;
+	paddinng:50;
+	
+}
+.button_1{
+	height:38px;
+	background:#e8491d;
+	border:0;
+	padding-left: 10px;
+	padding-right: 10px;
+	color:#ffffff;
+	
+}
+/*Header**/
+header{
+	background:#35424a;
+	color:#ffffff;
+}  	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 3px solid;
+}
+
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #branding{
+	float:left;
+	
+
+
+}
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+header .highlight, header .current a{
+	color#e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight:bold; 
+}
+
+.rotate90 {
+    transform:rotate(90deg);
+}
+
+
+</style>
+	
+	<p style="font-family:Lucida Console" class="padding">
+	<br>Learn to Coexist is a website consisting of different stories, folktales, and myths from various parts of the world. Our purpose is to compare and contrast the stories from many cultures as well as bring awareness to different cultures to help combat cultural ignorance. To do so, we have provided a variety of stories with different genres in order to allow for easy and effective comparison between cultures. </p>
+	<center><p style="color:red;"><p style="font-size:40px;">I Am Chinese, not a Math Genius</p></center>
+	<center><pre><p style="font-size:40px;font-family:Lucida Console;">I Am Irish, not an Alcoholic</p></pre></center>
+	<center><p style="font-size:40px;font-family:Lucida Console;">I Am Nigerian, not a Thief</p></pre></center>
+	<center><pre><p style="color pink;"><p style="font-size:40px;">I Am Puerto Rican, not a Drug Addict</p></center>
+	<center><p style="font-size:40px;font-family:Lucida Console;">We are Aware, We are Diverse, We are United</p></pre></center><p>
+	
+	
+	<div id="regions_div"> </div>
+	
+	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk8BgZC1ICCYWJEsFpWD8o1sjNsiXV-qo&callback=initMap"> </script>
+      	<script type="text/javascript">
+        	tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+        	tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+        function GetClock(){
+        	var d=new Date();
+        	var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+        	var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+        	if(nhour==0){ap=" AM";nhour=12;}
+        	else if(nhour<12){ap=" AM";}
+        	else if(nhour==12){ap=" PM";}
+        	else if(nhour>12){ap=" PM";nhour-=12;}
+        	if(nmin<=9) nmin="0"+nmin;
+        	if(nsec<=9) nsec="0"+nsec;
+        	document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+      	}
+      	window.onload=function(){
+        	GetClock();
+        	setInterval(GetClock,1000);
+      	}
+      	</script>
+      	<div id="clockbox"></div>
+	
+	</div>
+
+<!--Afterlife-->
+	<!--<div id="Cherokeeafterlife" class="tab-pane fade">
+	<h1>Cherokee</h1>
+	<p></p>
+	</div>-->
+
+	<div id="Chinaafterlife" class="tab-pane fade">
+	<h1 align="center">China</h1>
+	<center><img src="./Pictures/chineseafterlife.jpg" alt="chinaafterlife" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">At the moment of death, it is believed that one's spirit is taken by messengers to the god of walls and moats, Ch'eng Huang, who conducts a kind of preliminary hearing. Those found virtuous may go directly to one of the Buddhist paradises, to the dwelling place of the Taoist immortals, or the tenth court of hell for immediate rebirth.<br><br> After 49 days, sinners descend to hell, located at the base of Mount Meru. There they undergo a fixed period of punishment in one or more levels of hell. The duration of this punishment may be reduced by the intercession of the merciful Ti-ts'ang. <br><br>When the punishment is complete, the souls in hell drink an elixir of oblivion in preparation for their next reincarnation. They then climb on the wheel of transmigration, which takes them to their next reincarnation, or, in an alternative account, they are thrown off the bridge of pain into a river that sweeps them off to their next life.</p>
+	</div>
+
+	<div id="Irelandafterlife" class="tab-pane fade">
+	<h1 align="center">Ireland</h1>
+	<center><img src="./Pictures/irishafterlife.jpg" alt="irishafterlife" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">"Now there was a rich man, and he habitually dressed in purple and fine linen, joyously living in splendor every day. "And a poor man named Lazarus was laid at his gate, covered with sores, and longing to be fed with the crumbs which were falling from the rich man's table; besides, even the dogs were coming and licking his sores.<br><br>
+	"Now the poor man died and was carried away by the angels to Abraham's bosom; and the rich man also died and was buried. "In Hades he lifted up his eyes, being in torment, and saw Abraham far away and Lazarus in his bosom. "And he cried out and said, 'Father Abraham, have mercy on me, and send Lazarus so that he may dip the tip of his finger in water and cool off my tongue, for I am in agony in this flame.' "But Abraham said, 'Child, remember that during your life you received your good things, and likewise Lazarus bad things; but now he is being comforted here, and you are in agony. 'And besides all this, between us and you there is a great chasm fixed, so that those who wish to come over from here to you will not be able, and that none may cross over from there to us.' "And he said, 'Then I beg you, father, that you send him to my father's house-- for I have five brothers--in order that he may warn them, so that they will not also come to this place of torment.' "But Abraham said, 'They have Moses and the Prophets; let them hear them.' "But he said, 'No, father Abraham, but if someone goes to them from the dead, they will repent!' "But he said to him, 'If they do not listen to Moses and the Prophets, they will not be persuaded even if someone rises from the dead.'" (Luke 16:19-31)<br><br>
+	Irish and Christian believe in eternal life. When you die you go either to heaven or hell based on your life. If you led a sinful life, you are likely to go to hell, but if you led a good and holy life you are likely go to heaven. You can also seek forgiveness for your sins from God because he loves all his children. The general goal is to live your life everyday in a way that will let you into heaven in the end.
+	</p>
+	</div>
+	
+	<div id="Nigeriaafterlife" class="tab-pane fade">
+	<h1 align="center">Nigeria</h1>
+	<center><img src="./Pictures/NigerianAfterlife.jpg" alt="nigeriaafterlife" style="width:304px;height:228px;"></center>
+	<p align=left class="padding"> Death and the afterlife play a large role in the traditions and customs of the Ibo and Kalabari (part of the Ijaw) of Nigeria, both of which believe in worshipping spirits, in karma, in two souls, and in elaborate funeral ceremonies (including pilgrimages, feasts, dances, plays, and other rituals) that last for several years.<br><br>
+	First of all, both believe that one is always being watched by the spirit of his ancestors. The living show appreciation to the deceased and pray to them for future well being. Before each meal, one takes a bit of his food and tosses it to the ground, calling out the names of his ancestors and every eight days (the "Fene Bene"), the chief sets out food and drink for the spirits. Every seven years a goat is sacrificed and the blood is sprinkled in front of images or clay pillars which represent the ancestors ("Nduen Fobara"). One can also pray to the spirits at special shrines to ask for help in emergencies. <br><br>
+	The Ibo belive that every man has two souls -- the eternal ego (the Ijaw "Teme" or the Ibo "Maw") and the life force that dies with the body (the Ijaw "Bio-Maw" or the Ibo "Nkpuruk-Obi"). Both souls leave the body on the last exhaling, but the life force can leave temporarily at times before that (in great fear of accident). If this soul does not return, however, the body perishes as well. The eternal soul leaves the body on the last breath and takes the form of a ghost, shadow, or reflection. For this reason the living consider it dangerous to step on a shadow, and they often use mirrors in religion in order that the evil spirits will strike the mirror "image of the soul" and not the actual soul of a living man. </p>
+	</div>
+	
+	<div id="PuertoRicoafterlife" class="tab-pane fade">
+	<h1 align="center">Puerto Rico</h1>
+	<center><img src="./Pictures/puertoricoafterlife.jpg" alt="puertoricoafterlife" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">Belief in the existence of purgatory informed and shaped how Catholics in Puerto Rico prepared for death. Unlike Protestants, who believe that the soul’s eternal fate is either heaven or hell, Catholics believe in a temporary third option. They believe that purgatory is where the soul of the deceased person who was not absolutely good or bad goes for purification before it can be admitted to heaven or hell.</p>
+	</div>
+
+<!--Creation section-->
+	<!--<div id="Cherokeecreation" class="tab-pane fade">
+	<h1>Cherokee</h1>
+	<img src="C:/Users/Student/Desktop/cherokeecreation.jpg" alt="cherokeecreation" style="width:304px;height:228px;">
+	<p>The earth began as nothing but water and darkness, and all the animals were in Galúnlati, above the stone vault that makes up the sky. Eventually Galúnlati became so crowded that the animals needed more room, and they wanted to move down to earth. Not knowing what was below the water, they sent down the Water-beetle to explore. Water-beetle dove below the water and eventually came back with some mud from below. That mud grew and grew, and finally it became the island that we call earth. This island of earth is suspended at its four corners from ropes that hang down from the sky, and legend has it that some day the ropes will break and the earth will sink back into the water.
+	Because it grew from mud, the new earth was very soft. Many of the birds flew down to explore the new land, but it was too wet for them to stay. Finally Buzzard flew down, hoping it was dry, but the earth was still wet. Buzzard searched and searched, especially in the Cherokee country, and finally he became so tired that his wings flapped against the ground. His wings dug valleys where they hit the ground and turned up mountains where they pulled away, leaving the rugged country of the Cherokee.
+	Eventually the earth was dry and the animals moved down. There still was no light, however, and so the animals set the sun passing from east to west just over their heads. With the sun so close, many of the animals were burned, giving the red crawfish its crimson color. The animals raised the sun again and again, until it was high enough that all could survive.
+	When the plants and animals first came to earth, they were told to stay awake for seven nights, as in the Cherokee medicine ceremony. The animals all stayed awake the first night, and many stayed awake the next few nights, but only the owl and the panther and a couple of others stayed awake all seven nights. They were given the ability to see at night and so to hunt at night when the others are asleep. The same thing happened among the trees, and only the cedar, pine, spruce, holly and laurel stayed awake all seven nights, which is why they can stay green all year when the others lose their leaves.
+	Humans came after the animals. At first they multiplied rapidly, and the first woman give birth every seven days. Eventually there were so many of them that it seemed they might not all survive, and since then to this day each woman has been able to have just one child each year.
+	(The Story of Corn and Medicine, 1st half)
+	The creation story affects what the Cherokee hold in high regard. For example, cedar, pine, spruce, holly, and laurel and important aspects of medicines and ceremonies. Cedar and its beautiful colors were held in extra special regard and was onced used to carry honored dead. Seven is seen as a spiritual level that is very hard to attain, and they once thought only the owl and cougar had reached that level. This gave them high status too.
+	</p>
+	</div>-->
+
+	<div id="Chinacreation" class="tab-pane fade">
+	<h1 align="center">China</h1>
+	<center><img src="./Pictures/Pangucreation.jpg" alt="chinacreation" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">In the beginning, the universe was nothing but chaos and the heavens and the earth were intermingled (the analogy used was a big black egg). Pangu was born inside the egg and slept in it for 18,000 years and during this time, the Yin and Yang balanced as he grew. When he woke up, he cracked the egg and began pushing it apart, which then split the Yin and Yang. One half of the shell became the sky and the other became the earth. The longer they were apart, the thicker they grew and the taller he became, which pushed the shells further apart (about 10 feet per day). <br><br> From here, there were many different speculations; some say that after Pangu’s death, his body formed various parts of the earth and the parasites on his body formed humans. One version claims that he formed the earth with a chisel and hammer, and another version says that a goddess who later inhabited the earth formed humans.</p>
+	</div>
+
+	<div id="Irelandcreation" class="tab-pane fade">
+	<h1 align="center">Ireland</h1>
+	<center><img src="./Pictures/god.jpeg" alt="irelandcreation" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">
+	In the beginning, God created the heavens and the earth. The earth was lifeless, empty, and dark. Then the Spirit of God moved across the vast emptiness. He said, “Let there be light.” Suddenly light shone around the entire sphere of the earth! God looked at the light, and said, “That’s good.” 
+	He then divided the light from the darkness. He looked at the light and said, “I’ll call you day.” Turning to the darkness, He said, “And I’ll call you night.” So, with the day and the night, that was the first day.<br> <br>
+	On the second day, God looked at the waters and said, “Be divided!” 
+	Immediately, the waters started to separate. Some went up and the rest stayed down. God looked at the waters that were above, and he looked at the waters that were beneath. Then he looked at the space that was in between the two and said, “I’ll call you Sky.” <br><br>
+	On the third day, God focused on the waters that were below the sky. He said, “Be gathered together into seas, rivers and lakes. Let dry land appear.” Suddenly land rose up from the waters. Rivers flowed off the land separating the hills and causing valleys. Lakes and seas were everywhere. God looked at the dry land and he looked at the seas and said, “That’s good.”<br><br>
+	Then He said to the land, “Bring forth vegetation! Let there be grasses, vegetables, herbs, and trees. All of them will have seeds, so that life may continue on.” Immediately plants started growing across the entire earth. There were grasses, flowers, and vegetables. There were trees of many different kinds. Some would become tall, while other would remain close to the ground. Some of the trees would produce different kinds of fruit. All this vegetation grew from that day forward, and they all had seeds so life could continue on.<br><br>
+	On the fourth day, God looked into the heavens and said, “Let there be lights – a greater light to rule over the day, and a lesser light to dominate the night. They’ll divide the day and the night, and be for signs and seasons, days and years.” Immediately the sun started moving across the sky, giving light and warmth to the earth. The moon and stars filled the night with splendor and brilliance. God looked at the sun, the moon, and the stars and said, “That’s good.”<br><br>
+	On the fifth day, God looked at the sky and the waters that were below it. He said, “Bring forth life! Let there be birds in the skies, and fish and sea creatures in the water.”<br><br>
+	Immediately sea creatures started moving in the seas, lakes, and rivers. Some were large and others were very small. There were fish of all different sizes, shapes, and colors. Birds appeared in the skies.<br><br>
+	Some flew high up in the air, while others stayed close to the ground. They had different shapes, colors, and sounds. God looked at the sea creatures, the fish, and birds. He said, “That’s good.” He blessed them and told them to multiply and fill the seas and skies.” <br><br>
+	On the sixth day, God said to the earth, “Bring forth living creatures. Let there be wild animals and others that can be tamed.” Immediately, animals started walking across the earth. Some were huge, and others were very small. God looked at them and said, “That’s good.” <br><br>
+	Then God said, “Let’s make people. We’ll make them to be like us. They’ll rule over the fish of the sea, the birds of the air, and the animals that move across the land.”<br><br>
+	So God made a man and a woman and he blessed them and told them to multiply and fill the earth with people. He told them to rule over all he had made. He then gave them fruit, grains, vegetables, and green plants to eat.
+	Then God looked at all he had made, and he said, “It is all very, very good!”<br><br>
+	 On the seventh day, God rested from all that he had done. He blessed the seventh day and made it special. (Genesis 1 – 2:4)<br><br>
+	This story explains how the world came to be. The fact that God rested on the 7th day is why Mass is on Sundays and Christians are technically not supposed to do any work on that day. The Jewish Torah consists of the first 5 books of the bible, meaning this is also their creation story and affects them in a very similar difference. The main difference in the effects is that Jewish tradition has the sabbath (holy day) from sundown on Friday to sundown Saturday, as they believe the 7th day was a Saturday.
+	</p>
+	</div>
+
+	<div id="Nigeriacreation" class="tab-pane fade">
+	<h1 align="center">Nigeria</h1>
+	<center><img src="./Pictures/nigeriacreation.jpg" alt="nigeriacreation" style="width:304px;height:228px;"></center>
+	<p align=left class="padding"> In the beginning, there was only the sky above, water and marshland below. The chief god Olorun ruled the sky, and the goddess Olokun ruled what was below. Obatala, another god, reflected upon this situation, then went to Olorun for permission to create dry land for all kinds of living creatures to inhabit. He was given permission, so he sought advice from Orunmila, oldest son of Olorun and the god of prophecy.
+	He was told he would need a gold chain long enough to reach below, a snail's shell filled with sand, a white hen, a black cat, and a palm nut, all of which he was to carry in a bag. All the gods contributed what gold they had, and Orunmila supplied the articles for the bag.<br><br>When all was ready, Obatala hung the chain from a corner of the sky, placed the bag over his shoulder, and started the downward climb. <br><br>When he reached the end of the chain he saw he still had some distance to go.<br><br> From above, he heard Orunmila instruct him to pour the sand from the snail's shell, and also immediately release the white hen.
+	He did as he was told, whereupon the hen landing on the sand began scratching and scattering it about. Wherever the sand landed it formed dry land, the bigger piles becoming hills and the smaller piles valleys. Obatala jumped to a hill and named the place Ife.
+	The dry land now extended as far as he could see.
+	He dug a hole, planted the palm nut, and saw it grow to maturity in a flash. The mature palm tree dropped more palm nuts on the ground, each of which grew immediately to maturity and repeated the process. Obatala settled down with the cat for company. <br><br>
+	He decided to create beings like himself to keep him company. He dug into the sand and soon found clay with which to mould figures like himself and started on his task, but he soon grew tired and decided to take a break. 
+	He made wine from a nearby palm tree, and drank bowl after bowl. Not realizing he was drunk, Obatala returned to his task of fashioning the new beings; because of his condition he fashioned many imperfect figures.
+	Without realizing this, he called out to Olorun to breathe life into his creatures.<br><br>
+	The next day he realized what he had done, and swore never to drink again, and to take care of those who were deformed, thus becoming Protector of the Deformed.
+	The new people built huts as Obatala had done, and soon Ife prospered and became a city. <br><br>
+	All the other gods were happy with what Obatala had done, and visited the land often, except for Olokun, the ruler of all below the sky.
+	She had not been consulted by Obatala, and grew angry that he had usurped so much of her kingdom.
+	When Obatala returned to his home in the sky for a visit, Olokun summoned the great waves of her vast oceans and sent them surging across the land. 
+	Wave after wave she unleashed, until much of the land was underwater and many of the people were drowned. 
+	Those that had fled to the highest land beseeched the god Eshu who had been visiting, to return to the sky and report what was happening to them. 
+	Eshu demanded sacrifice be made to Obatala and himself before he would deliver the message
+	The people sacrificed some goats, and Eshu returned to the sky.<br><br>
+	When Orunmila heard the news he climbed down the golden chain to the earth, and cast many spells which caused the flood waters to retreat and the dry African land reappear.	 
+	So ended the great flood.</p>
+	</div>
+
+	<div id="PuertoRicocreation" class="tab-pane fade">
+	<h1 align="center">Puerto Rico</h1>
+	<center><img src="./Pictures/puertoricocreationn.jpg" alt="puertoricocreation" style="width:304px;height:228px;"></center>
+	<p align=left class="padding"> In the beginning there was only Atabey, who created the heavens. However, there was still a void, where nothingness prevailed. The heavens were inactive and any action was meaningless. Earth and the other cosmic entities laid barren.<br><br> Despite being dominated by darkness, Atabey herself failed to notice that this universe was incomplete. Eventually she decided to create two new deities, Yucáhu and Guacar, from magic and intangible elements. Atabey now felt confident that her creation could be completed and left it in charge of her sons. Yucáhu took over as a creation deity, becoming a universal architect and gathering the favour of his mother. From his dwelling in the heavens, he contemplated and awoke the Earth from its slumber. <br><br>As part of this process, two new deities emerged from a cave. Boinael and Maroya, controlling the sun and moon respectively, which were tasked with illuminating the new world day and night. No longer would the Earth be shrouded by darkness. Yucáhu was satisfied with his work, but in a fit of jealousy Guacar hid within the heavens, never to be seen again. <br><br>Now bored, Yucáhu roamed and noticed four gemstones that lied in the ground, which he took and converted into the celestial star beings Racuno, Sobaco, Achinao and Coromo, who reproduced and spread throughout the universe, where they guide the deities. He followed this by creating animals, granting them dwellings and teaching them how to live. Yucáhu then had a revelation, believing that something else should complete his creation. Convinced that the new entity should be neither animal nor deity, he pondered this profoundly. <br><br>Yucáhu then opened a rift in the heavens from which emerges the first man, whom he granted a soul and named Locuo. This man would roam the Earth endlessly filled by joy and thanking the deity for his creation. Finally satisfied with his creation, Yucáhu left the world in the hands of humanity, feeling that balance had been reached.</p>
+	</div>
+
+<!--Evil section-->
+	<!--<div id="Cherokeeevil" class="tab-pane fade">
+	<h1>Cherokee</h1>
+	<img src="C:/Users/Student/Desktop/cherokeeevil.jpg" alt="cherokeeevil" style="width:304px;height:228px;">
+	<p>Among these early people were a man and a woman name Kanáti and Selu, whose names meant "The Lucky Hunter" and "Corn", respectively. Kanáti would go hunting and invariably return with game, which Selu would prepare by the stream near their home. She also would always return home with baskets of corn, which she would pound to make meal for bread.
+	Kanáti and Selu had a little boy, and he would play by the stream. Eventually they realized that he was playing with another little boy who had arisen from the blood of the game washed by the stream. With their son's help they caught the other boy, and eventually he lived with them like he was their own son, although he was called "the Wild Boy".
+	Kanáti brought home game whenever he went hunting, and one day the two boys decided to follow him. They followed him into the mountains until he came to a large rock, which he pulled aside to reveal a cave from which a buck emerged. Kanáti shot the buck and, after covering the cave, he headed home. The boys got home before him and didn't reveal what they had learned, but a few days later they returned to the rock. With a struggle they pulled it aside and had great fun watching the deer come out of the cave. They lost track of what they were doing, however, and soon all sorts of game animals - rabbit and turkeys and partridges and buffalo and all - escaped from the cave. Kanáti saw all these animals coming down the mountain and knew what the boys must have done, and he went up the mountain after them. He opened four jars in the cave, and from them came fleas and lice and gnats and bedbugs that attacked the boys. He sent them home, hoping he could find some of the dispersed game for the supper. Thus it is that people must now hunt for game.
+	The boys went home, and Selu told them there would be no meat for dinner. However, she went to the storehouse for food, and told the boys to wait while she did so. They followed her instead to the storehouse and watched her go inside. She put down her basket and then rubbed her stomach, and the basket was partly full with corn. Then she rubbed her sides, and it was full to the top with beans. Watching through a crack in the storehouse wall, the boys saw all this. Selu knew that they had seen her, but she went ahead and fixed them a last meal. Then she and Kanáti explained that, because their secrets were revealed, they would die, and with them would end the easy life they had known. However, Selu told them to drag her body seven times around a circle in front of their house, and then to drag her seven times over the soil inside the circle, and if they stayed up all night to watch, in the morning they would have a crop of corn. The boys, however, only cleared a few spots and they only dragged her body over it twice, which is why corn only grows in certain places on the earth. They did sit up all night, though, and in the morning the corn was grown, and still it is grown today, although now it takes half a year.
+	In these early days, the plants, the animals, and the people all lived together as friends. As the people multiplied, however, the animals had less room to roam, and they were either slaughtered for food or trampled under the humans' feet. Finally the animals held a council to discuss what to do. The bears experimented with using bows and arrows to fight back, but they concluded that they would have to cut off their claws to use the bows. The deer held a council and decided to send rheumatism to any hunter who killed a deer without asking its pardon for having done so. When a deer is shot by a hunter, the fleet and silent Little Deer, leader of the deer, runs to the blood-stained spot to ask the spirit of the killed deer if the hunter prayed for pardon for his affront. If the answer is no, Little Deer follows the trail of blood and inflicts the hunter with rheumatism so that he is crippled.
+	The fish and reptiles likewise met, and resolved that the people would suffer from dreams in which snakes twined about them. The birds and smaller animals and insects all met too, and talked long into the night about how they had suffered from the humans. Eventually they created all sorts of new diseases to afflict humans, which have since become a scourge to the animals' oppressors.
+	After this the plants met, and they resolved that something must be done to counteract what the animals had done. That is why so many trees and shrubs and herbs, and even the mosses, provide remedies for diseases. It was thus that medicine first came into the world, to counteract the revenge of the animals
+	(The Story of Corn and Medicine, 2nd half)
+	Cherokee People do pray for pardon and still sometimes use plants to heal, although there are fewer and fewer Medicine Men and Women today.
+	</p>
+	</div>-->
+
+	<div id="Chinaevil" class="tab-pane fade">
+	<h1 align="center">China</h1>
+	<center><img src="./Pictures/chinaevil.jpg" alt="chinaevil" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">Yaoguai are malevolent animal spirits or fallen celestial beings that have acquired magical powers through the practice of Taoism. In Journey to the West (a Chinese novel published in the 16th century during the Ming dynasty and attributed to Wu Cheng’en), the demons seek this mostly by abduction and consumption of a holy man. <br><br>However, not all of them are demons; some others are of quite unusual origins. For example, there is a skeleton that became a demon, a fox spiri (pets of the delties), and demon minions. In Chinese folklore, the Chinese hell (Diyu) is a place populated by various demonic spawns.</p>
+	</div>
+
+	<div id="Irelandevil" class="tab-pane fade">
+	<h1 align="center">Ireland</h1>
+	<center><img src="./Pictures/irelandevil.jpg" alt="irelandevil" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">God created Adam and Eve and provided all they needed in the Garden of Eden. Like the animals, they had no need of clothes, yet they were not ashamed.
+	The snake was most clever of all the animals. <br><br>One day he said to Eve, “Is it true God won’t let you eat from all the trees in the garden?”
+	“Oh, we can eat from all the trees. That is, except for the one in the middle. God said that we aren’t to eat that fruit or even touch it. He says if we do, we’ll die.”
+	“It’s not true! You won’t die. God told you that because he knows if you eat that fruit, you’d be like him – knowing good, as well as evil.”
+	The woman looked at the fruit. It was beautiful and looked delicious. She thought, “If I eat this fruit, it’ll make me wise.” So she took the fruit and ate it. She then gave some to Adam and he ate it as well.<br><br> Suddenly they realized they were naked. So they sewed some fig leaves together to make coverings for themselves.
+	As evening approached, they heard God walking in the garden. <br><br>Suddenly, they realized they were afraid of God, so they hid among the trees.
+	“Adam, where are you?”
+	Adam knew he had to answer. He said, “Lord, I heard you walking in the garden, and I was afraid because I was naked. So, I hid.”
+	“Who told you that you were naked? Did you eat of the tree from which I told you not to eat?”
+	“It was the woman you gave me. She gave me the fruit, and … yes, I ate it.”
+	God turned to Eve, “Why did you do this?” 
+	“The snake! The snake tricked me into eating it!”
+	God turned to the snake and said, “Because you have done this, you are cursed more than all the animals. From now on, you’ll move about on your belly. There’ll be hostility between you and the woman, and there’ll be a battle between your offspring and hers. He’ll crush your head, while you’ll only bruise his heel.”
+	Looking back at the woman God said, “Your pain will be great when you give birth to children, and having babies will be associated with pain. You’ll want to control your husband, but from now on, men will dominate over you.”
+	God said to Adam, “I made it very clear that you were not to eat from that tree. Because you have disobeyed, the ground is cursed. From now on, you’ll work for your food, and the ground will fight against you. It’ll sprout thorns and weeds. Hard work will mark your life until you return to the soil from which you came.”
+	<br><br>God dressed the man and his wife in clothes made out of animal skins. He then sent them out of the garden, where they worked the soil for their food.
+	God said, “People now know evil as well as good. They’ll try to get to the Tree of Life so they can live forever.” Therefore, God put a heavenly guard outside the garden. From that day on, people were separated from the Tree of Life. (Genesis 2:25-3:24)
+	</p>
+	</div>
+
+	<div id="Nigeriaevil" class="tab-pane fade">
+	<h1 align="center">Nigeria</h1>
+	<center><img src="./Pictures/nigeriaevil.jpg" alt="nigeriaevil" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">There was a woman called Olurombi. This woman was not happy because she did not have a child. She tried for so long to have a child of her own, but all to no avail. So, she went to a spirit–tree (god) called lroko Oluwere. Iroko was a powerful tree, people used to worshipped it and requested for things they needed from it. At the end of their requests, they will make a vow with the god to give something back in appreciation of answer to their requests.
+	<br><br>When Olurombi got to lroko, she pleaded with the tree to give her a child. She vowed to return the child back to the powerful tree if her request was granted. Iroko was pleased with the pledge made by Olurombi because all the other people that have been coming before her.The highest gifts the worshippers have ever given to the god were goats and sheep.At last, some months later Olurombi became pregnant and had a baby girl. She was so happy and she named the child Aponbepore meaning “the most beautiful and as red as palm oil”. Aponbepore began to grow up but the mother did not remember to fulfill the vow she made with lroko. <br><br>So, when lroko had waited for a long time without Olurombi fulfilling her promise, the spirit- tree decided to go to her house and take Aponbepore. On getting to the house, the spirit-tree just gripped Aponbeore’s hand and began to drag her away. The girl and her mother began to cry . The mother ran after the spirit –tree crying and pleading but the god did not pay any attention to her.
+	The spirit-tree held on to the girl and disappeared.Olurombi cried and pleaded for her child to be returned back to her instead of releasing the girl, lroko replied with a song:
+	<br>Lead: Everyone made a pledge of a goat
+	<br>Chorus: A goat, a goat
+	<br>Lead: Everyone made a pledge of a sheep
+	<br>Chorus: A big fat sheep
+	<br>Lead : Olurombi made a vow of a child
+	<br>Chorus: Her child, Aponbepore
+	<br>Lead: Olurombi o
+	<br>Chorus: Janin-janin, lroko, janin-janin
+	<br>Lead: Olurombi o
+	<br>Chorus: Janin-janin,lroko janin-janin
+	</p>
+	</div>
+
+	<div id="PuertoRicoevil" class="tab-pane fade">
+	<h1 align="center">Puerto Rico</h1>
+	<center><img src="./Pictures/puertoricoevil.jpg" alt="puertoricoevil.jpg" style="width:304px;height:278px;"></center>
+	<p align=left class="padding"> No matter what you call it, the "evil eye" is unwanted in all cultures around the world. In Latin American culture specifically, "mal de ojo" is caused when one looks at another with envy and it is believed to inflict injury or bad luck.<br><br> Mothers are especially wary of evil eye and protect their infants by having them wear bracelets, like the red-beaded one from El Salvador. Anyone who comes to admire the baby are also encouraged to touch the child to ward off "mal de ojo." <br><br>Children afflicted with evil eye must be seen by a curandero (healer), who will often perform a ritual which includes passing an egg over the child's body and breaking it into a glass of water.
+	</p>
+	</div>
+	
+
+<!--Folklore-->
+	<!--<div id="Cherokeefolklore" class="tab-pane fade">
+	<h1>Cherokee</h1>
+	<p></p>
+	</div>-->
+
+	<div id="Chinafolklore" class="tab-pane fade">
+	<h1 align="center">China</h1>
+	<center><img src="./Pictures/chinesefolklore.jpg" alt="chinesefolklore.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">Why the Cat and the Rat are Mortal Enemies:
+
+	<br>The Chinese have a zodiac that is different from the Western zodiac. Based on animals, the zodiac animal changes every year as opposed to every month like its Western equivalent. According to Chinese folklore, the animals and the order of the animals in the zodiac was determined the Jade Emperor in a race.  
+
+	<br><br>Cat and Rat were the best of friends, the kind of friends that spends almost every waking hour together. Both were very excited about the news of the great race and immediately started to make plans to cross the river. <br><br>On the day of the race, Cat wanted to take a little nap before partaking in the race, since it would ask a lot of effort and would therefore be very exhausting. Winning this race, however, was the only thing Rat could think about. So, instead of waking up Cat, Rat silently sneaked out and spurred to the shore of the river.<br><br>After enjoying his splendid nap in the sun, Cat woke up to discover the race was already over and Rat had finished first. He was devastated and furious at the same time and swore to hate Rat forever. That is why Cat chased after Rat…and cats all over the world nowadays still do. 
+	</p>
+	</div>
+
+	<div id="Irelandfolklore" class="tab-pane fade">
+	<h1 align="center">Ireland</h1>
+	<center><img src="./Pictures/troutfishing.jpg" alt="irelandfolklore.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">Long ago, in a place called Cong in County Mayo, there lived a young woman. She was promised in marriage to a king's son, whom she loved very much. But, one day, the king's son was killed by an enemy.
+	The lady pined away from sadness. Everyone in the village was sorry for her. They knew how much she had been in love. <br><br>After a while, the beautiful lady disappeared. The villagers thought that the good people1 had taken her away.
+	Some time later, a white trout was noticed in the lake. This was curious, for a white trout had never before been seen in the area. The white trout was watched for many generations, and it never changed its appearance or its habits. The people thought the trout must be a magic fish. So they never bothered the trout and always treated it with great respect.
+	<br><br>Many, many, many years afterwards, a soldier was fishing in that same lake. When he caught the white trout, he laughed and jeered at the people.
+	"I've caught your precious white trout," he laughed, "and now I'll cook it right here."
+	So he built a fire and pulled out his skillet. When the fire was hot enough, he laid the white trout in the skillet. He held the skillet over the fire.
+	"I've never seen a white trout before," he said. "This fish will probably be the best dinner I will ever get! I can't wait till it is cooked a golden brown."
+	<br><br>After a while, the soldier turned the fish over in the skillet. He was surprised that the trout was still white and had not browned. Well, he thought to himself, I'll turn it again in a while and let it cook a bit longer on that side.
+	But when he turned the fish again, that side was not browned, either. Perhaps this kind of fish does not turn brown, he thought. I will just eat it this way. Surely, it will taste very well unbrowned, as it is a special fish.
+	<br><br>As the soldier began to cut the trout with his knife, a loud scream was heard. The soldier was so frightened he jumped back.
+	"Look what you've done with that knife," cried a beautiful woman, holding out her cut arm. "Why could you not have left me in the lake? I am waiting for my love to return to me. You must take me back to the lake immediately!"
+	"But," trembled the soldier, "I cannot take a beautiful woman to the lake and throw her in!"
+	"If you do not take me back and I miss my love, I will haunt you forever," said the lady. And, at that, she returned to her shape of a white trout.
+	<br><br>The soldier, still shaking, quickly picked up the trout and placed her on a clean plate. He raced back to the lake and gently slipped the trout into the water. There was a stain of red in the water for a few seconds from the cut. And, to this day, all trout have a red mark on their side.
+	As for the soldier, he changed his ways. He never again made fun of other people's beliefs. And he never, never again ate one bit of fish!
+	</p>
+	</div>
+
+	<div id="Nigeriafolklore" class="tab-pane fade">
+	<h1 align="center">Nigeria</h1>
+	<center><img src="./Pictures/nigeriafolklore.jpg" alt="nigeriafolklore.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">   Once upon a time, the King of the Sky invited all the birds
+	to a big party.  The birds were talking with excitement about preparing for the party when Tortoise overheard them.
+	 
+	‘Did you say you are going to a party?’ asked Tortoise.
+	‘May I go too?’ asked Tortoise.
+	 
+	‘The last time you came to our party, you ruined it all for us.  No, you can’t come with us.’
+	 
+	‘Oh please – I am a changed person.  I won’t spoil it this time around,’ pleaded Tortoise.  With his sweet tongue, he soon convinced the birds to give him a feather each to make a pair of wings so he could go to the party.
+
+	<br><br>Soon the big day came. There was excitement everywhere.  Tortoise put on his wings and joined the birds.  But Tortoise’s greed had not disappeared completely.
+	 
+	‘Oh, my friends, did you know that you must have a new name for parties such as this?’
+	 
+	The birds said they had no idea that there was such a tradition.  But they thought tortoise was older and wiser about these things and so they all took new names.
+	 
+	‘What is your new name?’ the birds asked Tortoise.
+	 
+	‘All of you,’ Tortoise replied.
+	 
+	The  birds  thought  that was  a strange  name but  they did  not  say anything.
+	<br><br>Finally, they all arrived at the party.
+	 
+	The King was pleased to see them.  He was particularly struck by Tortoise, because he had never seen such a bird before.  The King decided to give the seat of honour at the head of the table to Tortoise.  The King’s servants then filled the tables with the most delicious dishes anyone had ever seen.
+	 
+	Tortoise got more and more excited.  He swallowed saliva hard and asked the King of the Sky, ‘Your Majesty, Sir, who did you prepare this wonderful feast for?’
+	 
+	‘I made it for all of you,’ the King replied.
+	 
+	Tortoise turned to the birds and said, ‘Did you hear that.  It was made for “All of you” and that is my name.  You will have to wait for me to finish eating before you get your share.’
+	 
+	Tortoise ate and ate while the birds sat and watched.  They got more and more angry.  <br><br>When Tortoise could not eat any more, he invited the birds to eat the leftovers.  The birds looked at the messy leftovers and decided not to eat at all.   As they left, they each walked past Tortoise and plucked the feathers they had given to him.<br><br>  There was Tortoise, now filled with food and no wings, just a hard shell with which to find his way home from the Sky.
+	 
+	Tortoise was now very worried.  He wanted to send a message to his wife but none of the birds would take the message.  Parrot, who was the most angry and the last to take his feather from Tortoise, agreed to send the message. </p>
+	</div>
+
+	<div id="PuertoRicofolklore" class="tab-pane fade">
+	<h1 align="center">Puerto Rico</h1>
+	<center><img src="./Pictures/puertoricofolklore.jpg" alt="puertoricofolklore.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding"> Once upon a time, on the island of Puerto Rico, there lived a boy named Juan Bobo — well, his name was Juan, but he was called Juan Bobo because he was a foolish boy. He had a huge heart, full of generosity and sweetness. <br><br>Alas, that heart was not what he used when he was making decisions about life. For that he used his head, and Juan Bobo's head? Well, let's just say his head was not quite as full as his heart.
+	<br><br>One day Juan Bobo's mother invited friends for dinner. "I'll make a nice, big chicken stew," she said to Juan Bobo. She had the chicken, and she had the rice, but she didn't have a large-enough pot.
+	"Juan Bobo," she said, "go to your grandmother's house and borrow her biggest pot. Hurry now so I can make my stew."
+	Juan Bobo loved chicken stew, so naturally he was glad to help. He ran outside and up the hill toward his grandmother's house. As he ran, he could almost taste that stew, and he could see the pot -- the big, three-legged iron pot, round and sturdy. He had eaten many a stew cooked in that pot.
+	When he reached his grandmother's house, he went straight to the cupboard where she kept the pot. He lifted it up on his shoulder and called, "Thank you, Grandmother," before heading for home.
+	Home wasn't far, but that pot was heavy and the day was hot. <br><br>Before long sweat was pouring down Juan Bobo's face, and his shoulder hurt, and his feet were tired, and his breath was becoming short. "I think I'll rest awhile," he said aloud, so he stopped and put that pot on the ground.
+	He stood there catching his breath, looking at that pot, and suddenly he noticed those three legs.
+	"Hey," he said, "you have three legs and I have only two. Why should I carry you?"
+	The very idea that a boy with two legs had to carry a pot with three legs made no sense to Juan Bobo.<br><br> Of course it didn't, because sense was not what Juan Bobo usually made.
+	He continued to stare at that pot, and he began to feel angry. "You lazy pot!" he said at last. "Why don't you walk on your own? Come, we'll race to my house, but since I have just two legs and you have three, I'll take a head start!"
+	The pot seemed to be staring back at him.
+	"It's easy, the house is just downhill and round the corner," he said, nodding at the pot. He was sure it understood his directions.
+	"I'm off," he said, and he began to race toward home.
+	<br><br>When he reached the cottage, he rushed inside and said to his mother, "Did I get here first?"?
+	Juan Bobo's mother looked at her son's sweaty, flushed face and shook her head. "What are you talking about? Where is your grandmother's pot?"
+	"Mother," Juan Bobo said, very seriously, "that pot has three strong legs, and I have only two, so I told the pot I would race it home."
+	Juan Bobo's mother shook her head and sighed, "Oh Juan Bobo, don't you know pots can't walk on their own? You go back and get that pot right now or you'll have no stew at all!"
+	<br><br>Juan Bobo was very upset with his mother, but he longed for that stew. So he ran back up the hill and found the pot right where he had left it, of course. "What kind of lazy pot are you?" he shouted. "Now I'm in trouble with my mother, and I may not have dinner tonight! You have one more chance. Get going down the hill!"
+	Naturally the pot just sat there staring at poor Juan Bobo, and this infuriated the boy.<br><br> His usually kind heart began to grow cold, and he stared angrily at the pot. "One more chance," he warned.
+	The pot did not budge.So Juan Bobo lost his temper, and he kicked the pot. It tipped over on its side and began to roll down the hill. "That's right!" Juan Bobo cried, overjoyed that at last the pot was on its way home.
+	And so the pot and Juan Bobo reached home. Juan Bobo's heart warmed a little, especially later that night as he ate the delicious chicken stew his mother had cooked inside that pot.
+	In the morning his mother said, "Now Juan Bobo, take the pot back to your grandmother's house."
+	Juan Bobo looked at the pot and saw that it still had three legs, and even though he was nice and full from that delicious chicken stew, he still had only two legs.
+	<br><br>But Juan Bobo's heart was compassionate, and he knew the pot had worked hard all night cooking that stew. So he picked up the pot and carried it on his shoulder up the hill, but as they walked, he said, "Next time you'll walk back home on your own, my friend."
+	Nobody is quite sure what happened next time.
+	</p>
+	</div>
+
+	<div id="Chinalove" class="tab-pane fade">
+	<h1 align="center">China</h1>
+	<center><img src="./Pictures/butterfly-lovers-chinese-painting.jpg" alt="chinalove.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding"> 
+	梁山伯与祝英台
+	<br>Liáng Shānbó yǔ Zhù Yīngtái
+	<br>The Butterfly Lovers:
+
+	<br>One of China’s four great romantic folktales, The Butterfly Lovers is a story is a tragic love story between two starcrossed lovers. It is similar to the western story Romeo and Juliet.
+
+	Zhu Yingtai is the only daughter of the wealthy Zhu family. Although women are traditionally discouraged from pursuing an education, Zhu Yingtai managed to convince her father to allow her to take classes disguised as a male. During her studies, Zhu Yingtai met Liang Shanbo, a fellow scholar. They immediately got along and soon became sworn brothers.<br><br> During their next three years in school, Zhu Yingtai gradually fell in love with Liang Shanbo. During this time Liang, distracted by his studies, does not even begin to suspect the true identity of his sworn brother. 
+
+	<br><br>One day, Zhu receives a letter from her father commanding her to return home. Having no choice Zhu packs to leave and Liang accompanies her for 18 miles to see her off. During this journey Zhu hints to Liang that she is a woman but he fails to catch any of her hints. They reluctantly part ways at the Changting pavilion. <br><br>Months later, Liang goes to visit Zhu and discovers that she is a woman. They fall in love and swear to love each other “till death do us part”.  However, their happiness is short lived as Zhu’s parents have already arranged for her to marry Ma Wencai, a man from a rich family. Liang is heartbroken and his health gradually deteriorated until he became critically ill and soonafter died.
+
+	<br><br>On the day of her arranged marriage, strong winds prevented the wedding procession from escorting Zhu Yingtai past Liang’s grave, which lied along the journey. Zhu leaves the procession to pay respects at the grave. However, overcome by grief she begged the grave to open up. Miraculously, the grave opens up with a clap of thunder and Zhu Yingtai throws herself into the grave to join Liang Shanbo. Their spirits emerged from the grave in the form of a pair of butterflies and flew away together, never to be separated again. </p>
+	</div>
+
+	<div id="Irelandlove" class="tab-pane fade">
+	<h1 align="center">Ireland</h1>
+	<center><img src="./Pictures/irelandlove.jpg" alt="irelandlove.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">Richard Joyce  was the name of a sailor from the fishing village of Claddagh in Galway who set sail for the plantations of the West Indies in the 17th Century. Unfortunately, the entire crew was kidnapped by pirates and brought to Algeria where they were sold into slavery. Richard (who was to have been married that very week,) was purchased by a goldsmith who trained him in the craft. <br><br>Richard never forgot his love during his captive years, and in 1689, an amnesty was declared as William II, King of England, demanded the release of all slaves who were part of his kingdom.
+	<br><br>For Richard’s part, he had sufficiently charmed and impressed his master to the point where he was offered half the goldsmith’s wealth and his daughter’s hand in marriage, but Richard’s true love was waiting for him back in Galway and he asked to be sent home so he could be with her.
+	Richard returned to Galway and was delighted to find his beloved waiting for him; it is not known whether he was released or escaped.<br><br> Unbeknownst to the goldsmith, Richard had stolen specks of gold from the workshop each day which he fashioned into a ring. This was given to his sweetheart whom he married. After receiving the ring, they got married and their love lasted forever.  He set up a goldsmith shop and is said to have created more Claddagh rings with the initials ‘RI’ on them. 
+	<br><br>Today, many Irish people have Claddagh rings. Parents often give them to young girls, and people also often give them to their significant other. The Claddagh ring is made up of 3 parts- a heart for love, hands for friendship, and a crown for loyalty. <br><br>The way you wear a Claddagh ring makes it mean different things. If you wear it on your left hand with the crown facing away from your knuckle, it symbolises marriage and unity. Wearing the Claddagh on your right hand with the crown pointed towards your knuckle means you are single and still searching for love.  If the Claddagh is worn on the right hand with the crown facing away from your knuckle means your heart is taken by a significant other.
+	</p>
+	</div>
+
+	<div id="Nigerialove" class="tab-pane fade">
+	<h1 align="center">Nigeria</h1>
+	<center><img src="./Pictures/OBBA.jpg" alt="nigerialove.jpg" style="width:304px;height:280px;"></center>
+	<p align=left class="padding"> Ọba [Obba], is the Nigerian and Santarian Goddess of the River, Daughter of Yemaja[Mother Goddess] ; She was Married to Sango [God of Thunder].
+	The thing is both her sisters were also married to Sango – Oya and Oshun. So a little bit of rivalry existed between the three of them.
+	<br><br>Oba was the first wife and her children were set to be the heir to Sango’s kingdom. Sango however loved Oshun more than the rest of his wives because she was the best cook out of them all.
+	Oba on the other hand, desperate to please Sango once asked Oshun how she succeeded in making Sango so happy all the time. Oshun was not pleased with the idea of sharing her secret with Oba, afterall Oba was the first wife and only her children stood to gain anything from Sango’s kingdom.
+	<br><br>Initially she point blank refused to tell Oba anything but after much begging and pleading, Oshun had an idea; She told Oba that the reason why Sango loved her so much was because she cut a piece of her ear, and added it to Sango’s food as part of the ingredients.
+	Oba was visibly pleased, she decided to out do Oshun by cutting her whole ear off instead of “a little piece”. <br><br>The very next day she cut one ear off and put it in a well garnished food she had prepared, she was all smiles as she presented it to Sango encouraging him to eat as much as he could.
+	Not long after Sango started eating did he notice the piece of Ear floating in the Soup; His face burned with rage as he threw the pot of soup on the floor, he accused Oba of trying to poison him and he banished her from the house.  <br><br>She cried so much, her heavy sobs began to turn into a river and the more she cried, the more she a pool of water began to form around her until she eventually turned into the River Oba which intersects with the Oṣun river at turbulent rapids, to show the rivalry between the two wives.  She is still worshipped there today.</p>
+	</div>
+
+	<div id="PuertoRicolove" class="tab-pane fade">
+	<h1 align="center">Puerto Rico</h1>
+	<center><img src="./Pictures/legendofhummingbird.jpg" alt="puertoricolove.jpg" style="width:304px;height:228px;"></center>
+	<p align=left class="padding">The Legend of the Hummingbird: 
+
+	<br>A bit of Romeo and Juliet with some divine intervention thrown in, the legend of the hummingbird tell of star-crossed lovers from rival Taino tribes. <br><br>Alida and Taroo fall in love after meeting by accident by a pool in the forest. Alida's father discovered their trysts and arranged a marriage to a man from his own tribe. <br><br>The girl prayed to the gods to deliver her from this fate, and they complied by changing her into a red flower.
+
+	<br><br>Taroo, ignorant of her father's machinations and his love's transformation, waited and waited by the pool until one night the moon took pity on him and told him of her floral fate. He begged the gods to help him find her, and once again they obliged, changing him into a hummingbird.</p>
+	</div>
+
+<!--More Stories-->
+	<div id="Add" class="tab-pane fade">
+	<h1 class="padding">Links</h1>
+	<p class="padding"><a href="http://www.storynory.com/archives/myths-world-stories/" style="color:lightcoral">Storynory</a></p>
+	<p class="padding"><a href="http://www.worldoftales.com/" style="color:lightcoral;">World of Tales</a></p>
+	</div>
+<!--I am...-->
+	<div id="Iam" class="tab-pane fade">
+	<form>
+      <h1><center><strong>I am <input id="title" type="text" placeholder="" />, but <input id="name" type="text" placeholder="" /></strong></center></h1>
+
+      <center> <input type="button" value="Enter" onclick="insert()" /></center>
+    </form>
+    <center><p style="font-family:Lucida Console;font-size:25px" id="display"></p></center>
+	</div>
+
+<!--About Us-->
+	<div id="AboutUs" class="tab-pane fade">
+	<h1 class="padding">About Us</h1>
+	<p class="padding">
+	<img src="./Pictures/gwc.jpg" alt="gwc.jpg" style="float:left;width:304px;height:228px;">
+	We are part of the Girls Who Code Summer Immersion Program in Chicago where we learned about computer science and coding. The five of us decided to come together and combine our ideas in order to create this website to bring awareness to the cultures around us. 
+	</p>
+	<br>
+	<h2 class="padding"> <p class="padding"> <b>Alexis</b> </h2>
+	<p class="padding">
+	<img src="./Pictures/alexis.jpg" alt="alexis.jpg" style="float:left;width:304px;height:300px;">
+	My name is Alexis Williams, I am a rising junior at Rowe Clark Math and Science Academy. I joined the Girls Who Code Summer Immersion Program to further my knowledge on computer science and coding.
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2 class="padding"> <p class="padding"> <b>Claire</b> </h2>
+	<p class="padding">
+	<img src="./Pictures/PhotoGrid_1500704712273.jpg" alt="claire.jpg" style="float:left;width:304px;height:228px;">
+	My name is Claire Nkwo, I am a rising senior at Thornton Fractional North. My love for learning, and work ethic is the reason i joined the Girls Who Code Summer Immersion Program. I love a challenge, and I understand how important coding would be in my future. I am very happy that I have this experience.
+	</p>
+	<br>
+	<br>
+	<h2 class="padding"> <p class="padding"> <b>Grace</b> </h2>
+	<p class="padding">
+	<img src="./Pictures/grace.jpg" alt="grace.jpg" style="float:left;width:304px;height:228px;" class="rotate90">
+	<br>
+	<br>
+	<br>
+	My name is Grace Kelley, and I am a rising Junior at Prospect High School. I joined Girls Who Code, originally at my school’s club, because I really enjoyed my CS class. I applied to the Summer Immersion Program because I wanted to learn even more.
+	</p>
+	<h2 class="padding"><b> <p class="padding"> Karen</b> </h2>
+	<p class="padding">
+	<img src="./Pictures/image1.jpg" alt="karen.jpg" style="float:left;width:290px;height:300px;">
+	My name is Karen Ma and I am a rising senior at Jones College Prep. I joined the Girls Who Code program because I’ve never done anything with coding and computer science in general and I thought it would be a really good experience for me learn about the computer science world and meet new people. 
+	</p>
+	<br>
+	<br>
+	<br>
+	<h2 class="padding"><b> <p class="padding">Winnie</b> </h2>
+	<p class="padding">
+	<img src="./Pictures/image-1.jpg" alt="winnie.jpg" style="float:left;width:265px;height:320px;">
+	My name is Winnie Liang and I am a rising senior at Whitney Young. I joined the Girls Who Code Summer Immersion program because I was interested in learning how to code. Prior to this program I had no experience coding and I am glad I decided to do this program. It has been an amazing experience.
+	</p>
+	</div>
+	</div>
+	 <script>
+  var titles  = [];
+  var names   = [];
+  var entry
+  var titleInput  = document.getElementById("title");
+  var nameInput   = document.getElementById("name");
+
+  var messageBox  = document.getElementById("display");
+
+  function insert ( ) {
+  titles.push( titleInput.value );
+  names.push( nameInput.value );
+  clearAndShow();
+  }
+
+  function clearAndShow () {
+    // Clear our fields
+    titleInput.value = "";
+    nameInput.value = "";
+  
+    // Show our output
+    messageBox.innerHTML = " ";
+    for (i=0; i< titles.length; i++){
+    messageBox.innerHTML += "I am " + titles[i] + ", but " + names[i]+ "<br>"; 
+    }
+  }
+  </script>
+
+	
+	</body>
+</html>
